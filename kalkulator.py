@@ -39,7 +39,6 @@ class Kalkulator:
         Button(self.okno, text='^1/2', height=1, width=5, command = lambda: self.znak('^1/2')).grid(row=3, column=4)
         Button(self.okno, text='1/[]', height=1, width=5, command = lambda: self.znak('1/')).grid(row=4, column=4)
 
-        #Ali racunas v radianih ali stopinjah
         Button(self.okno, text='', height=1, width=5).grid(row=4, column=2)
         Button(self.okno, text='', height=1, width=5).grid(row=5, column=2)
 
