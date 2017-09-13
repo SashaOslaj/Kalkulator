@@ -28,7 +28,6 @@ class Kalkulator:
         Button(self.okno, text='9', height=1, width=5, command = lambda: self.znak('9')).grid(row=3, column=2)
         Button(self.okno, text='0', height=1, width=5, command = lambda: self.znak('0')).grid(row=4, column=0)
 
-        #Decimalna vejica
         Button(self.okno, text='', height=1, width=5).grid(row=4, column=1)
 
         #Operacije, ki jih racunalo zna izracunati
