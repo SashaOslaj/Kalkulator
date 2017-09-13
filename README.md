@@ -1,2 +1,2 @@
 # Kalkulator
-Enostaven kalkulator, ki lahko shrani račun, če klikneš gumb za shrani.
+Enostaven kalkulator, ki vzame samo cela števila in z njimi računa in shrani lahko račun, če klikneš gumb za shrani.
