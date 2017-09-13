@@ -29,7 +29,7 @@ class Kalkulator:
         Button(self.okno, text='0', height=1, width=5, command = lambda: self.znak('0')).grid(row=4, column=0)
 
         #Decimalna vejica
-        Button(self.okno, text=',', height=1, width=5, command = lambda: self.znak(',')).grid(row=4, column=1)
+        Button(self.okno, text='', height=1, width=5).grid(row=4, column=1)
 
         #Operacije, ki jih racunalo zna izracunati
         Button(self.okno, text='+', height=1, width=5, command = lambda: self.znak('+')).grid(row=1, column=3)
@@ -65,10 +65,10 @@ class Kalkulator:
         if text == '^2' or text == '^1/2' or text == '1/':
             self.drugi_operatorji += text
         if len(self.operator) == 0 and len(self.drugi_operatorji) == 0:
-            if text in '1234567890,':
+            if text in '1234567890':
                 self.stevilo1 += text
         if len(self.operator) == 1 or self.drugi_operatorji != '^2' or self.drugi_operatorji == '1/' or self.drugi_operatorji != '^1/2':
-            if text in '1234567890,':
+            if text in '1234567890':
                 self.stevilo2 += text
         if len(self.operator) > 1 or len(self.drugi_operatorji) > 4:
             self.pobrisi()
