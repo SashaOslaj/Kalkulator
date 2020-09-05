@@ -92,7 +92,8 @@ class Kalkulator:
     #Funkcija izračuna izraz in ga izpiše v polju
     def izracunati(self):
         stevilo1 = int(self.stevilo1)
-        stevilo2 = int(self.stevilo2)
+        dolzina=len(self.stevilo1)
+        stevilo2 = int(self.stevilo2[dolzina:])
         if self.operator == '+':
             self.prikazno_okno.set(stevilo1 + stevilo2)
             self.ponastavi()
